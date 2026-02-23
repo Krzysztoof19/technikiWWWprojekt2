@@ -1,0 +1,350 @@
+@import url('https://fonts.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    height: 125px;
+    background-image: url("baner.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-color: #EEEEEE;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 20px; color: #111; }
+
+h2 { 
+    font-size: 2rem; 
+    margin-bottom: 30px; 
+    margin-top: 60px; 
+    color: #111; 
+    text-align: left; 
+}
+
+h3 { margin-bottom: 10px; color: #333; }
+
+.przycisk {
+    display: inline-block;
+    background-color: #CC0000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.przycisk:hover { background-color: #990000; }
+
+.przycisk-maly {
+    display: inline-block;
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.przycisk-pelny {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.przycisk-pelny:hover { background-color: #555; }
+
+nav {
+    background-color: #333333;
+    padding: 15px 0;
+    color: white;
+}
+
+.kontener-nawigacji {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu li a:hover { color: #CC0000; }
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.hero-tresc p {
+    margin-bottom: 30px; 
+}
+
+.hero-zdjecie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.karta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.trener-karta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+
+.karta-obrazek {
+    display: none;
+    height: 200px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.zdjecie-trenera {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+.zdjecie-oferty {
+    width: 100%;      
+    height: 350px;    
+    object-fit: cover; 
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.kontener-formularza {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kontener-formularza form {
+    display: flex;
+    flex-direction: column;
+}
+.kontener-formularza label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.kontener-formularza input,
+.kontener-formularza textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section#kontakt h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .kontener-nawigacji {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .hero, .grid-3, .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .hero-zdjecie { order: -1; }
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.flex-columns > div {
+    width: 100%;
+}
+
+.flex-columns img {
+    width: 100%;      
+    max-width: 100%;      
+    height: auto;     
+    border-radius: 8px;
+    display: block;
+}
+
+.flex-columns ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-columns li {
+    margin-bottom: 5px;
+}
+
+.sekcja-rezerwacji {
+    margin-top: 60px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.kontener-tabeli {
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+.tabela-rezerwacji {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-rezerwacji th {
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.tabela-rezerwacji td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.tabela-rezerwacji tr:hover {
+    background-color: #fdfdfd;
+}
+
+
+.btn-usun {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-usun:hover {
+    background: #cc0000;
+}
+
+.kontener-nowa-rezerwacja {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.formularz-linia {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.formularz-linia .pole {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.formularz-linia label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.formularz-linia select, 
+.formularz-linia input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

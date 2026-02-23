@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja - Akademia Tenisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="kontener-nawigacji">
+            <div class="logo">Akademia Tenisa Stołowego</div>
+            <ul class="menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="logowanie.html">Zaloguj się</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="kontener-formularza" style="margin-top: 50px; background: white; padding: 30px; border-radius: 8px;">
+        <h2 style="text-align: center;">Załóż darmowe konto</h2>
+        
+        <p id="registerMessage" style="text-align: center; font-weight: bold;"></p>
+
+        <form id="registerForm">
+            <label>Imię</label>
+            <input type="text" name="imie" id="regImie" required>
+            
+            <label>Email</label>
+            <input type="email" name="email" id="regEmail" required>
+            
+            <label>Hasło (min. 6 znaków)</label>
+            <input type="password" name="haslo" id="regHaslo" required minlength="6">
+            
+            <button type="submit" class="przycisk-pelny">ZAREJESTRUJ SIĘ</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px;">Masz konto? <a href="logowanie.html" style="color: #CC0000;">Zaloguj się</a></p>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>

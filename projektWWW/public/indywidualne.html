@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treningi Indywidualne - Akademia Tenisa</title>
+</head>
+<body>
+
+    <nav>
+        <div class="kontener-nawigacji">
+            <div class="logo">Akademia Tenisa Stołowego</div>
+            
+            <ul class="menu" id="mainMenu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="treningiGrupowe.html">Treningi Grupowe</a></li>
+                <li><a href="index.html#trenerzy">Trenerzy</a></li>
+                <li><a href="index.html#kontakt">Kontakt</a></li>
+
+                <li id="nav-login"><a href="logowanie.html">Logowanie</a></li>
+                <li id="nav-register"><a href="rejestracja.html">Rejestracja</a></li>
+                <li id="nav-user" style="display:none; color: #CC0000; font-weight: bold; padding: 0 15px;">Witaj, <span id="userNamePlaceholder"></span>!</li>
+                <li id="nav-logout" style="display:none;"><a href="#" id="logoutBtn" class="przycisk-maly">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="flex-columns">
+            <div>
+                <img src="indyw.webp" alt="Trening indywidualny">
+            </div>
+            <div>
+                <h2>Indywidualne Treningi Tenisa Stołowego</h2>
+                <p>Treningi indywidualne to najszybsza droga do podniesienia Twoich umiejętności na wyższy poziom. Skupienie 1 na 1 z trenerem pozwala na natychmiastową korektę techniki.</p>
+                
+                <h3>Co otrzymujesz w ramach sesji indywidualnej:</h3>
+                <ul>
+                    <li>Analizę i diagnostykę Twojej aktualnej techniki i taktyki.</li>
+                    <li>Spersonalizowany plan treningowy dopasowany do Twojego poziomu.</li>
+                    <li>Intensywny trening na wiele piłek (multiball).</li>
+                    <li>Praca nad słabymi stronami (serwis, backhand, praca nóg).</li>
+                </ul>
+                
+                <a href="index.html#kontakt" class="przycisk">ZAPISZ SIĘ</a>
+            </div>
+        </section>
+
+        <section id="moje-rezerwacje" class="sekcja-rezerwacji">
+            <h2>Twoje Umówione Treningi</h2>
+            <div id="lista-rezerwacji" class="kontener-tabeli">
+                </div>
+
+            <div class="kontener-nowa-rezerwacja">
+                <h3>Umów nowy termin</h3>
+                <form id="formRezerwacja" class="formularz-linia">
+                    <div class="pole">
+                        <label>Typ treningu</label>
+                        <select id="typTreningu">
+                            <option value="Indywidualny z trenerem">Indywidualny z trenerem</option>
+                            <option value="Konsultacja techniczna">Konsultacja techniczna</option>
+                        </select>
+                    </div>
+                    <div class="pole">
+                        <label>Data i godzina</label>
+                        <input type="datetime-local" id="dataTreningu" required>
+                    </div>
+                    <button type="submit" class="przycisk">REZERWUJĘ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Szkoła Tenisa Stołowego. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

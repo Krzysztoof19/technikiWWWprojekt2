@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła Tenisa Stołowego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+    </header>
+
+    <nav>
+        <div class="kontener-nawigacji">
+            <div class="logo">Akademia Tenisa Stołowego</div>
+            
+            <ul class="menu" id="mainMenu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="#trenerzy">Trenerzy</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li id="nav-login"><a href="logowanie.html">Logowanie</a></li>
+                <li id="nav-register"><a href="rejestracja.html">Rejestracja</a></li>
+                <li id="nav-user" style="display:none; color: #CC0000; font-weight: bold; padding: 0 15px;">Witaj, <span id="userNamePlaceholder"></span>!</li>
+                <li id="nav-logout" style="display:none;"><a href="#" id="logoutBtn" class="przycisk-maly">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-tresc">
+                <h1>Szkoła tenisa stołowego</h1>
+                <p>
+                    Chcesz nauczyć się grać lub podnieść swoje umiejętności? 
+                    Nasza szkoła to idealne miejsce dla Ciebie. Profesjonalni trenerzy i świetna atmosfera.
+                </p>
+                <a href="#oferta" class="przycisk">SPRAWDŹ OFERTĘ</a>
+            </div>
+            <div class="hero-zdjecie">
+                <img src="akademia.jpg" alt="Rakietka do tenisa" onerror="this.src='https://via.placeholder.com/600x400'">
+            </div>
+        </section>
+
+        <section id="trenerzy">
+            <h2>Nasi Trenerzy</h2>
+            <div class="grid-3">
+                <div class="karta">
+                    <img src="zhang.avif" alt="Zdjęcie Trenera Marka" class="zdjecie-trenera">
+                    <h3>Trener Zhang</h3>
+                    <p>Specjalista od techniki i taktyki. Prowadzi graczy ligowych.</p>
+                </div>
+                <div class="karta">
+                    <img src="tom.jpg" alt="Zdjęcie Trenera Toma" class="zdjecie-trenera">
+                    <h3>Trener Tom</h3>
+                    <p>Świetne podejście do dzieci. Nauka poprzez zabawę.</p>
+                </div>
+                <div class="karta">
+                    <img src="yana.jpg" alt="Zdjęcie Trenerki Yanay" class="zdjecie-trenera">
+                    <h3>Trenerka Yana</h3>
+                    <p>Ekspert przygotowania fizycznego i kondycyjnego.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="oferta">
+            <h2>Nasza Oferta</h2>
+            <div class="grid-2">
+                <div class="karta">
+                    <img src="grupowe1.jpg" alt="Treningi grupowe przy stole" class="zdjecie-oferty">
+                    <h3>Treningi Grupowe</h3>
+                    <p>Idealne na start! Zajęcia w grupach, dużo gry na punkty.</p>
+                    <br>
+                    <a href="treningiGrupowe.html" class="przycisk-maly">Dołącz do grupy</a>
+                </div>
+
+                <div class="karta">
+                    <img src="multi.jpg" alt="Trening indywidualny z trenerem" class="zdjecie-oferty">
+                    <h3>Treningi Indywidualne</h3>
+                    <p>Szybki rozwój pod okiem trenera. Indywidualny plan.</p>
+                    <br>
+                    <a href="indywidualne.html" class="przycisk-maly">Umów trening</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2 id="naglowek-kontakt">Skontaktuj się z nami</h2>
+            <div class="kontener-formularza">
+                <form id="contactForm">
+                    <label>Imię</label>
+                    <input type="text" placeholder="Wpisz imię">
+
+                    <label>Nazwisko</label>
+                    <input type="text" placeholder="Wpisz nazwisko">
+
+                    <label>Twoja wiadomość</label>
+                    <textarea rows="5" placeholder="Napisz wiadomość..."></textarea>
+
+                    <button type="submit" class="przycisk-pelny">WYŚLIJ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Szkoła Tenisa Stołowego. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
