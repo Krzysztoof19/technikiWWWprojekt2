@@ -64,7 +64,7 @@ Obsługa aplikacji
 2. Przejdź do sekcji "Treningi Indywidualne" – tam znajduje się panel zarządzania rezerwacjami.
 3. Formularz pod tabelą pozwala na dodanie nowego terminu.
 4. Przycisk "Edytuj datę" w tabeli pozwala na zmianę terminu istniejącej rezerwacji.
-
 5. Przycisk "Odwołaj" trwale usuwa rezerwację z bazy danych.
+
 
 
