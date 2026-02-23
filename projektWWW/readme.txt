@@ -1,4 +1,4 @@
-Projekt zaliczeniowy z przedmiotu Techniki WWW. Jest to aplikacja webowa w architekturze Client-Server,
+Projekt zaliczeniowy z przedmiotu TechnikiWWW. Jest to aplikacja webowa w architekturze Client-Server,
 obsługująca stronę szkoły tenisa stołowego. Aplikacja posiada system logowania/rejestracji oraz panel do zarządzania swoimi rezerwacjami treningów.
 
 Zastosowane technologie
@@ -64,4 +64,5 @@ Obsługa aplikacji
 2. Przejdź do sekcji "Treningi Indywidualne" – tam znajduje się panel zarządzania rezerwacjami.
 3. Formularz pod tabelą pozwala na dodanie nowego terminu.
 4. Przycisk "Edytuj datę" w tabeli pozwala na zmianę terminu istniejącej rezerwacji.
+
 5. Przycisk "Odwołaj" trwale usuwa rezerwację z bazy danych.
