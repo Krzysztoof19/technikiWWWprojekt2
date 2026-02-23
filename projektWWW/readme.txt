@@ -13,7 +13,7 @@ Struktura projektu
 - `/routes` - wydzielone ścieżki (endpointy) API dla rezerwacji
 - `server.js` - główny plik serwera i autoryzacja
 - `package.json` - konfiguracja projektu i zależności
-- `README.txt` - dokumentacja i instrukcja uruchomienia
+- `readme.txt` - dokumentacja i instrukcja uruchomienia
 
 Instrukcja uruchomienia
 
@@ -66,4 +66,5 @@ Obsługa aplikacji
 4. Przycisk "Edytuj datę" w tabeli pozwala na zmianę terminu istniejącej rezerwacji.
 
 5. Przycisk "Odwołaj" trwale usuwa rezerwację z bazy danych.
+
 
