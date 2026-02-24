@@ -53,6 +53,7 @@ Instalacja i uruchomienie aplikacji
 1. Otwórz terminal w głównym folderze projektu.
 2. Zainstaluj wszystkie wymagane biblioteki komendą:
 npm install
+3. Jeżeli wystąpi problem z uprawineniami może być potrzbne: Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 Uruchom serwer aplikacji:
 node server.js
@@ -65,6 +66,7 @@ Obsługa aplikacji
 3. Formularz pod tabelą pozwala na dodanie nowego terminu.
 4. Przycisk "Edytuj datę" w tabeli pozwala na zmianę terminu istniejącej rezerwacji.
 5. Przycisk "Odwołaj" trwale usuwa rezerwację z bazy danych.
+
 
 
 
